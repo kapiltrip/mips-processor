@@ -22,5 +22,5 @@ This file centralizes the YouTube references and local notes paths for quick nav
 - `day_1_and_2/Lecture_29_SOME_RECOMMENDED_PRACTICES.md`
 
 ## Tip
-- Keep this file at the repo root so it remains easy to find, and update it as you add more lectures.
+- Keep this file inside `notes/` so the repository root stays focused on source code, and update it as you add more lectures.
 
