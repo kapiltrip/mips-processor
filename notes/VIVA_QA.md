@@ -253,15 +253,15 @@ This ensures a wrong-path store/write/halt cannot commit.
 If you have Icarus Verilog installed:
 
 - Add-three-numbers:  
-  `iverilog -g2012 -s tb_add_three_numbers -o sim_add modellingOftheProcessor/*.v`  
-  `vvp sim_add`
+  `iverilog -g2012 -s tb_add_three_numbers -o modellingOftheProcessor/artifacts/sim_add modellingOftheProcessor/*.v`  
+  `vvp modellingOftheProcessor/artifacts/sim_add`
 
 - Memory-word demo:  
-  `iverilog -g2012 -s tb_memory_word -o sim_mem modellingOftheProcessor/*.v`  
-  `vvp sim_mem`
+  `iverilog -g2012 -s tb_memory_word -o modellingOftheProcessor/artifacts/sim_mem modellingOftheProcessor/*.v`  
+  `vvp modellingOftheProcessor/artifacts/sim_mem`
 
 - Factorial:  
-  `iverilog -g2012 -s tb_factorial -o sim_fact modellingOftheProcessor/*.v`  
-  `vvp sim_fact`
+  `iverilog -g2012 -s tb_factorial -o modellingOftheProcessor/artifacts/sim_fact modellingOftheProcessor/*.v`  
+  `vvp modellingOftheProcessor/artifacts/sim_fact`
 
-Waveforms: open the generated `.vcd` files in GTKWave (or any VCD viewer).
+Waveforms: open the generated `.vcd` files in `modellingOftheProcessor/artifacts/vcd/` with GTKWave (or any VCD viewer).

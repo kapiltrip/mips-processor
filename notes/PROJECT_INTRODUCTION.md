@@ -101,11 +101,11 @@ Separately, the `calculation/` folder provides the "paper trail" of instruction 
 
 From `modellingOftheProcessor/` (requires Icarus Verilog: `iverilog` + `vvp`):
 
-- Add-three-numbers: `iverilog -g2012 -s tb_add_three_numbers -o sim_add *.v` then `vvp sim_add` (expected: `R5 = 55`)
-- Memory-word demo: `iverilog -g2012 -s tb_memory_word -o sim_mem *.v` then `vvp sim_mem` (expected: `Mem[121] = 130`)
-- Factorial: `iverilog -g2012 -s tb_factorial -o sim_fact *.v` then `vvp sim_fact` (expected: `Mem[198] = 5040` when `Mem[200] = 7`)
+- Add-three-numbers: `iverilog -g2012 -s tb_add_three_numbers -o artifacts/sim_add *.v` then `vvp artifacts/sim_add` (expected: `R5 = 55`)
+- Memory-word demo: `iverilog -g2012 -s tb_memory_word -o artifacts/sim_mem *.v` then `vvp artifacts/sim_mem` (expected: `Mem[121] = 130`)
+- Factorial: `iverilog -g2012 -s tb_factorial -o artifacts/sim_fact *.v` then `vvp artifacts/sim_fact` (expected: `Mem[198] = 5040` when `Mem[200] = 7`)
 
-Each run writes a `.vcd` waveform (`tb_*.vcd`) for inspection in GTKWave.
+Each run writes the `sim_*` executable into `modellingOftheProcessor/artifacts/` and the waveform into `modellingOftheProcessor/artifacts/vcd/` for inspection in GTKWave.
 
 ## Limitations (and how I would extend it)
 
